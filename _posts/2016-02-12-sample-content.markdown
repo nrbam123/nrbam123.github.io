@@ -5,7 +5,7 @@ date:   2018-12-20 20:14:47
 categories: main
 ---
 * * *
-## Multiview Algorithm(Co-training)
+# Multiview Algorithm(Co-training)
 * * *
 보통 기업과 같은 조직에서 특정 프로젝트나 업무를 진행할 때, 종종 Taskforce를 구성하곤 합니다. Taskforce란 전략팀, 진행팀, 시스템전문가, 디자인전문가, 경영회계팀 등 여러 분야(조직)의 전문가들을 모아서 한팀으로 구성하여 프로젝트를 진행하는것을 뜻합니다. 이는 사람마다 잘하는 분야가 다르며, 프로젝트에서 여러 분야의 전문성이 요구될때 각자 잘하는 부분에서 능력을 발휘할 수 있게 하기 위함입니다. 즉 개개인별로 잘하는 부분을 취합하여 프로젝트를 원활히 진행하고 보다 나은 성과를 내고자 하는 개념입니다.
 
@@ -15,7 +15,7 @@ categories: main
 
 ![test image]({{ site.baseurl }}/computer.png)
 
-# Multiview 알고리즘
+## Multiview 알고리즘
 Multiview 알고리즘에서는 하나의 데이터를 변수군에 따라 클러스터링하는 작업이 필요합니다. 각 데이터들을 유사성이 높은 변수들(inner correlation)이 높고 데이터셋간의 유사성은 낮은 먼저 여러개의 알고리즘을 활용하기 위해서 데이터의 변수들을 최대한 독립적인 set으로 나눕니다. D(x) = x(1), x(2), x(3)...x(n) ( 이때 n개의 split된 데이터셋에 대해서는 n개의 모델이 필요함 )
 
 ![test image2]({{ site.baseurl }}/split.png)
@@ -28,7 +28,7 @@ Multiview 알고리즘에서는 하나의 데이터를 변수군에 따라 클�
 
 위의 과정을 반복하여 최종적으로 unlabeled된 데이터들의 label을 얻을 수 있다는 것이 Multiview algorithm입니다.
 
-# python 코드를 통한 실습
+## python 코드를 통한 실습
 실제 구체적인 예시로 데이터셋 중 많이 사용되는 iris데이터을 바탕으로 multiview 알고리즘을 사용해보았습니다. 본 데이터는 13개의 featuere와 174개의 instance로 이루어져 있습니다.
 이때 원 데이터에는 모든 labeling이 되어있지만, 본 알고리즘의 의의를 위해 일부 data에 대한 label만 사용하고 나머지 개는 unlabeled data로 가정하였습니다. 따라서 174개중 90개만 labeling되어있다 생각하고 training 데이터로 활용하였습니다.
 
