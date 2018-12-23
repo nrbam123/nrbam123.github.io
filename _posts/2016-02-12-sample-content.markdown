@@ -13,12 +13,12 @@ categories: main
 
 예를 들어 컴퓨터를 구분하는데 있어서, 컴퓨터의 사진을 가지고도 분류가 가능하며, 컴퓨터의 스펙을 가지고도 분류가 가능합니다. 이때 컴퓨터의 사진을 나타내는 데이터 셋과, 스펙이 적힌 데이터셋은 거의 독립적인 변수셋이라고 볼 수 있으며 이 각각의 데이터셋과 모델을 통해 좋은 결과를 취합하고자 하는것이Multiview 알고리즘입니다. 
 
-![test image]({{ site.baseurl }}/images/computer.png)
+![test image]({{ site.baseurl }}/computer.png)
 
 # Multiview 알고리즘
 Multiview 알고리즘에서는 하나의 데이터를 변수군에 따라 클러스터링하는 작업이 필요합니다. 각 데이터들을 유사성이 높은 변수들(inner correlation)이 높고 데이터셋간의 유사성은 낮은 먼저 여러개의 알고리즘을 활용하기 위해서 데이터의 변수들을 최대한 독립적인 set으로 나눕니다. D(x) = x(1), x(2), x(3)...x(n) ( 이때 n개의 split된 데이터셋에 대해서는 n개의 모델이 필요함 )
 
-![test image2]({{ site.baseurl }}/images/데이터 split.png)
+![test image2]({{ site.baseurl }}/split.png)
 
 각 sub dataset을 학습하기 위한 모델들은 다 같은 모델일 필요는 없으며, 해당 데이터셋에 가장 적합한 모델을 선정하여야합니다. 가령 split된 데이터가 텍스트 데이터와 같은 sparse한 형태를 지닌 데이터는 TF-IDF등의 모델을 사용하고, 이미지 데이터의 경우 convolution neural network 등을 사용하면 좋습니다.
 
