@@ -1,6 +1,6 @@
 # Setup
 title:        Joon's blog
-tagline:      문준의 
+tagline:      문준의 블로그입니다
 baseurl:      "https://nrbam123.github.io/"
 paginate:     1
 locale:       "en"
