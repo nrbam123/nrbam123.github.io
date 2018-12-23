@@ -1,7 +1,7 @@
 # Setup
-title:        Project or Site name
-tagline:      A responsive theme for your project on GitHub Pages
-baseurl:      ""
+title:        Joon's blog
+tagline:      문준의 
+baseurl:      "https://nrbam123.github.io/"
 paginate:     1
 locale:       "en"
 
