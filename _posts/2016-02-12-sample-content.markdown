@@ -59,7 +59,7 @@ xcorr_table
 위의 과정을 통해 도출된 correlation coeficient matrix를 통해 상관관계가 낮은 2개의 cluster set를 구성하였습니다
 set1 : 2,3,5,6,10,13
 set2 : 1,4,7,8,9,11,12 
-이렇게 구성한 두 데이터셋을 토대로 2개의 모델을 
+이렇게 구성한 두 데이터셋을 토대로 2개의 모델을  
 ```python
 from sklearn.utils import shuffle
 x, y = shuffle(x, y, random_state=0)
