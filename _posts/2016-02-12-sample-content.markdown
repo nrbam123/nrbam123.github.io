@@ -59,7 +59,8 @@ xcorr_table
 위의 과정을 통해 도출된 correlation coeficient matrix를 통해 상관관계가 낮은 2개의 cluster set를 구성하였습니다
 set1 : 2,3,5,6,10,13
 set2 : 1,4,7,8,9,11,12 
-이렇게 구성한 두 데이터셋을 토대로 2개의 모델을  
+이렇게 구성한 두 데이터셋을 토대로 2개의 모델(kneighborsclassifier, SVM)을 만든후 각각 학습하여, label을 생성하였습니다.
+검증과정( 본 모형에서는 두 모델의 결과가 같은 값을 레이블로 인정하였습니다 )을 거친 후 label을 도출후 이를 다시 학습데이터로 활용하여 모든 레이블링이 완료될때까지 반복합니다 
 ```python
 from sklearn.utils import shuffle
 x, y = shuffle(x, y, random_state=0)
